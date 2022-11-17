@@ -548,7 +548,7 @@ function AutoSession.RestoreSession(sessions_dir_or_file)
       return
     end
 
-    Lib.logger.info("Session restored from " .. file_path)
+    --Lib.logger.info("Session restored from " .. file_path)
 
     if AutoSession.conf.auto_session_enable_last_session then
       Lib.conf.last_loaded_session = session_name
